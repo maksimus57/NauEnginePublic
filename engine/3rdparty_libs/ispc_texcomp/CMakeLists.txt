@@ -23,7 +23,7 @@ function(add_parser_generator_command targetPath outFilesH outFilesObj grammarFi
     )
 
     if (NOT Platform_Windows)
-        message (FATAL_ERROR "Please, add support for other development platforms: linux, osx")
+        #message (FATAL_ERROR "Please, add support for other development platforms: linux, osx")
     endif()
 
     add_custom_command(

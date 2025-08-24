@@ -38,6 +38,6 @@ if (WIN32)
 
   include(platformSpec/NauMicrosoft)
   message(STATUS "Configure for Microsoft/(${CMAKE_SYSTEM_NAME}), msvc:(${Compiler_MSVC}), clang-cl:(${Compiler_ClangCl}), cl like:(${Compiler_Cl})")
-else()
-  message(FATAL_ERROR "Unsupported platform (${CMAKE_SYSTEM_NAME})")
+#else()
+#  message(FATAL_ERROR "Unsupported platform (${CMAKE_SYSTEM_NAME})")
 endif()

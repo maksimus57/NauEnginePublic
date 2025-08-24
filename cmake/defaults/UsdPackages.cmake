@@ -1,9 +1,17 @@
 # file to find packages
 include(FetchContent)
+# FetchContent_Declare(
+#   Usd
+#   URL        https://cdn.nauengine.org/s3/naungn-portal-prod/documents/usd24.08_no_Hydra.zip
+#   SOURCE_DIR exdeps/usd
+# )
+# FetchContent_MakeAvailable(Usd)
+# FetchContent_GetProperties(Usd SOURCE_DIR UsdDir)
+
 FetchContent_Declare(
   Usd
-  URL        https://cdn.nauengine.org/s3/naungn-portal-prod/documents/usd24.08_no_Hydra.zip
-  SOURCE_DIR exdeps/usd
+  GIT_REPOSITORY        https://github.com/PixarAnimationStudios/OpenUSD.git
+  GIT_TAG               59992d2178afcebd89273759f2bddfe730e59aa8                    # v24.08
 )
 FetchContent_MakeAvailable(Usd)
 FetchContent_GetProperties(Usd SOURCE_DIR UsdDir)

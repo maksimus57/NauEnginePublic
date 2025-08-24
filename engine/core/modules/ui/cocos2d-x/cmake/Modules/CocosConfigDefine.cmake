@@ -14,8 +14,8 @@ if(${CMAKE_SYSTEM_NAME} MATCHES "Windows")
     set(WINDOWS TRUE)
     set(PLATFORM_FOLDER win32)
 else()
-    message(FATAL_ERROR "Unsupported platform, CMake will exit")
-    return()
+    #message(FATAL_ERROR "Unsupported platform, CMake will exit")
+    #return()
 endif()
 
 # generators that are capable of organizing into a hierarchy of folders
